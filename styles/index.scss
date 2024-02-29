@@ -1,0 +1,133 @@
+body {
+  width: 1400px;
+  background: rgb(0, 0, 0);
+}
+
+header {
+  p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    span {
+      border-radius: 200px;
+      background: rgb(101, 50, 248);
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+  }
+}
+h1 {
+  font-size: 50px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.container {
+  width: 930px;
+  height: 986px;
+  border-radius: 20px;
+  background: rgb(35, 35, 35);
+  height: 800px;
+  overflow-y: scroll;
+
+  .container__add-movies {
+    margin: 50px 40px 0px 40px;
+    padding-left: 30px;
+
+    .add-new-movie-input {
+      background: none;
+      border: none;
+      border-bottom: 1px solid gray;
+      font-size: 30px;
+      padding: 10px;
+      margin-right: 20px;
+      color: white;
+    }
+    .btn-add-new-movie {
+      width: 62px;
+      height: 62px;
+      background: rgb(101, 50, 248);
+      border-radius: 50%;
+      border: none;
+    }
+    .btn-add-new-movie:hover {
+      cursor: pointer;
+      opacity: 0.7;
+    }
+  }
+}
+
+.container__list-movies {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  
+
+  .movie {
+    position: relative;
+    width: 790px;
+    height: 71px;
+    border-radius: 10px;
+    background: rgb(58, 57, 57);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+
+    .checkbox {
+        position: absolute;
+        width: 19px;
+        height: 18px;
+        top: 35%;
+        left: 20px;
+        border: 1px solid rgb(243, 246, 249);
+        border-radius: 50%;
+        opacity: 0.3;
+        // background: rgb(101, 50, 248);
+    }
+    .checkbox:hover {
+       cursor: pointer;
+    }
+    .movie-name {
+        color: white;
+        font-size: 20px;
+    }
+    img {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        top: 23%;
+        right: 20px;
+    }
+    img:hover {
+        cursor: pointer;
+        opacity: 0.5;
+        width: 50px;
+        height: 50px;
+        top: 18%;
+    }
+
+  }
+
+  .movie_hidden {
+    opacity: 0.5;
+    text-decoration: line-through;
+    
+}
+.checkbox_active {
+    background: rgb(101, 50, 248);
+}
+
+
+
+
+}

@@ -1,0 +1,144 @@
+body {
+  width: 1400px;
+  background: rgb(0, 0, 0);
+}
+
+header p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+header p span {
+  border-radius: 200px;
+  background: rgb(101, 50, 248);
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 50px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  width: 930px;
+  height: 986px;
+  border-radius: 20px;
+  background: rgb(35, 35, 35);
+  height: 800px;
+  overflow-y: scroll;
+}
+.container .container__add-movies {
+  margin: 50px 40px 0px 40px;
+  padding-left: 30px;
+}
+.container .container__add-movies .add-new-movie-input {
+  background: none;
+  border: none;
+  border-bottom: 1px solid gray;
+  font-size: 30px;
+  padding: 10px;
+  margin-right: 20px;
+  color: white;
+}
+.container .container__add-movies .btn-add-new-movie {
+  width: 62px;
+  height: 62px;
+  background: rgb(101, 50, 248);
+  border-radius: 50%;
+  border: none;
+}
+.container .container__add-movies .btn-add-new-movie:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.container__list-movies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.container__list-movies .movie {
+  position: relative;
+  width: 790px;
+  height: 71px;
+  border-radius: 10px;
+  background: rgb(58, 57, 57);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+.container__list-movies .movie .checkbox {
+  position: absolute;
+  width: 19px;
+  height: 18px;
+  top: 35%;
+  left: 20px;
+  border: 1px solid rgb(243, 246, 249);
+  border-radius: 50%;
+  opacity: 0.3;
+}
+.container__list-movies .movie .checkbox:hover {
+  cursor: pointer;
+}
+.container__list-movies .movie .movie-name {
+  color: white;
+  font-size: 20px;
+}
+.container__list-movies .movie img {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 23%;
+  right: 20px;
+}
+.container__list-movies .movie img:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  width: 50px;
+  height: 50px;
+  top: 18%;
+}
+.container__list-movies .movie_hidden {
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+.container__list-movies .checkbox_active {
+  background: rgb(101, 50, 248);
+}
