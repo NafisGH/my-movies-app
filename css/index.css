@@ -120,6 +120,9 @@ main {
 .container__list-movies .movie .checkbox:hover {
   cursor: pointer;
 }
+.container__list-movies .movie .checkbox_active {
+  background: rgb(101, 50, 248);
+}
 .container__list-movies .movie .movie-name {
   color: white;
   font-size: 20px;
@@ -141,7 +144,4 @@ main {
 .container__list-movies .movie_hidden {
   opacity: 0.5;
   text-decoration: line-through;
-}
-.container__list-movies .checkbox_active {
-  background: rgb(101, 50, 248);
 }

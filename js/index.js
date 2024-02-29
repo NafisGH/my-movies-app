@@ -10,11 +10,8 @@ function getNameMovieFromUser() {
   const newNameMovie = jsAddNewMovieInput.value;
   return newNameMovie;
 }
-// getNameMovieFromUser();
 
 jsBtnAddNewMovie.addEventListener("click", createAddNewMovie);
-
-
 
 function createAddNewMovie() {
   const newNameMovie = getNameMovieFromUser();
@@ -31,12 +28,13 @@ jsAddNewMovieInput.classList.remove("add-new-movie-input-red")
 
   movies.push(newMovie)
 
-
   const newDivMovie = document.createElement("div");
   newDivMovie.className = "movie";
 
   const divCheckBox = document.createElement("div");
   divCheckBox.className = "checkbox";
+
+  let check = divCheckBox
 
   const paragrafMovieName = document.createElement("p");
   paragrafMovieName.className = "movie-name";
@@ -45,8 +43,6 @@ jsAddNewMovieInput.classList.remove("add-new-movie-input-red")
   const newImage = document.createElement("img");
   newImage.className = "imgClose";
   newImage.src = "./resource/svg/close.svg";
-
-  
 
   newDivMovie.appendChild(divCheckBox);
   newDivMovie.appendChild(paragrafMovieName);
@@ -72,15 +68,21 @@ function handlerEventClickMovie(event) {
   if (event.target.className === "checkbox") {
     // нахожу родитель <div class="movie ">
     const parentNode = event.target.parentNode;
+    const check = document.querySelector(".checkbox") 
+    
 
-    console.log(parentNode)
     // получаю индекс фильма в массиве
     const movieIndex = Array.from(containerListMovies.children).indexOf(parentNode)
-    console.log('movieIndex',movieIndex)
 
-    // Переключаем класс у родительского элемента
+
+    // Переключаем класс у родительского элемента 
     parentNode.classList.toggle("movie_hidden");
+   
+    const checkMark = parentNode.querySelector(".checkbox");
+    // checkMark.classList.toggle("checkbox_active")
+    console.log(checkMark)
   }
+
 }
 
 // Удаление фильма из списка

@@ -102,6 +102,9 @@ main {
     .checkbox:hover {
        cursor: pointer;
     }
+    .checkbox_active {
+      background: rgb(101, 50, 248);
+  }
     .movie-name {
         color: white;
         font-size: 20px;
@@ -128,9 +131,7 @@ main {
     text-decoration: line-through;
     
 }
-.checkbox_active {
-    background: rgb(101, 50, 248);
-}
+
 
 
 
