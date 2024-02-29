@@ -64,6 +64,9 @@ main {
   margin-right: 20px;
   color: white;
 }
+.container .container__add-movies .add-new-movie-input-red {
+  border-bottom: 2px dashed red;
+}
 .container .container__add-movies .btn-add-new-movie {
   width: 62px;
   height: 62px;

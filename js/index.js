@@ -10,7 +10,7 @@ function getNameMovieFromUser() {
   const newNameMovie = jsAddNewMovieInput.value;
   return newNameMovie;
 }
-getNameMovieFromUser();
+// getNameMovieFromUser();
 
 jsBtnAddNewMovie.addEventListener("click", createAddNewMovie);
 
@@ -18,6 +18,12 @@ jsBtnAddNewMovie.addEventListener("click", createAddNewMovie);
 
 function createAddNewMovie() {
   const newNameMovie = getNameMovieFromUser();
+
+if (newNameMovie === "") {
+  jsAddNewMovieInput.classList.add("add-new-movie-input-red")
+  return
+}
+jsAddNewMovieInput.classList.remove("add-new-movie-input-red")
 
   const newMovie = {
     name: newNameMovie,
@@ -52,8 +58,6 @@ function createAddNewMovie() {
   document.body.appendChild(main);
 
   clearInput();
-
-
 }
 
 
